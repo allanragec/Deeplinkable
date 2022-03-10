@@ -1,0 +1,16 @@
+PODS:
+  - Deeplinkable (0.1.0)
+
+DEPENDENCIES:
+  - Deeplinkable (from `../`)
+
+EXTERNAL SOURCES:
+  Deeplinkable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Deeplinkable: 04768e6008bb52688cb81a06ab66b810b3970be1
+
+PODFILE CHECKSUM: 242d4f2f5c9741d4f6421d1e9bc461f067012d4b
+
+COCOAPODS: 1.11.2
