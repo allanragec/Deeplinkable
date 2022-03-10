@@ -4,8 +4,10 @@ The sdk create a way to map deeplinks easily, you just need to implement the Dee
 
 ## Use
 
+### Static urls
 You should to import `Deeplinkable` SDK.
-If you want to create static deeplinks, you should to return the property `isDynamicPath` as `false`.
+If you want to create static deeplinks, you should to return the property `isDynamicPath` as `false`. For the `deeplinkPath` property you need to define the static url without query parameters (but you can receive query parameters in `open` function normally). On `open` function you can decide if you really want to open that url conform your restriction, and if is a good time to open it.
+
 ```swift
 import Deeplinkable
 
@@ -34,6 +36,14 @@ extension ModuleAViewControllerA: Deeplinkable {
 
 ```
 
+<iframe src="https://giphy.com/embed/WI6ATKuBqKrTuQBGJK" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/WI6ATKuBqKrTuQBGJK">via GIPHY</a></p>
+
+### Dynamic urls
+If you have a dynamic deeplink you can use regex expressions, to conform with some specific urls with dynamic properties in the path.
+So, in this case `ModuleCViewControllerA` can conform with urls like:
+1. deeplinksample://modulec/viewcontrollera/f14g23h132/test?query=abc
+2. deeplinksample://modulec/viewcontrollera/b12g3132/test?query=123
+
 ```swift
 import Deeplinkable
 
@@ -60,6 +70,10 @@ extension ModuleCViewControllerA: Deeplinkable {
 }
 
 ```
+
+<img width="300" src="https://giphy.com/embed/tnds8CG5MpXGhMP8U5" class="giphy-embed">
+
+<iframe src="https://giphy.com/embed/tnds8CG5MpXGhMP8U5" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tnds8CG5MpXGhMP8U5">via GIPHY</a></p>
 
 ## Example project
 
