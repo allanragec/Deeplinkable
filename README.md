@@ -36,7 +36,7 @@ extension ModuleAViewControllerA: Deeplinkable {
 
 ```
 
-<iframe src="https://giphy.com/embed/WI6ATKuBqKrTuQBGJK" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/WI6ATKuBqKrTuQBGJK">via GIPHY</a></p>
+<img width="800" src="https://media0.giphy.com/media/WI6ATKuBqKrTuQBGJK/giphy.gif">
 
 ### Dynamic urls
 If you have a dynamic deeplink you can use regex expressions, to conform with some specific urls with dynamic properties in the path.
@@ -71,9 +71,7 @@ extension ModuleCViewControllerA: Deeplinkable {
 
 ```
 
-<img width="300" src="https://giphy.com/embed/tnds8CG5MpXGhMP8U5" class="giphy-embed">
-
-<iframe src="https://giphy.com/embed/tnds8CG5MpXGhMP8U5" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tnds8CG5MpXGhMP8U5">via GIPHY</a></p>
+<img width="800" src="https://media2.giphy.com/media/V1D9CSF7TPU5Y6YJ6U/giphy.gif">
 
 ## Example project
 
